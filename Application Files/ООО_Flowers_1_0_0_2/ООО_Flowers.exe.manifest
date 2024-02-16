@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="ООО_Flowers.exe" version="1.0.0.2" publicKeyToken="c25eab473056751c" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="ООО_Flowers" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="ООО_Flowers.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          Параметры манифеста UAC
+          Если нужно изменить уровень контроля учетных записей Windows, замените 
+          узел requestedExecutionLevel одним из следующих значений.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+        Если нужно использовать виртуализацию файлов и реестра для обратной
+             совместимости, удалите узел requestedExecutionLevel.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ClassLibrary1.dll" size="4608">
+      <assemblyIdentity name="ClassLibrary1" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>GiEt3X10dQlRmNJbnHCLjjYj+oE7/RNmZ5hHkFfhE6s=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ООО_Flowers.exe" size="344976">
+      <assemblyIdentity name="ООО_Flowers" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>3wA/TqD3FjDp/4S/PUS3Azp2Oc6swenq2ctuT9D/VLQ=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="Flowers.mdf" size="8388608" writeableType="applicationData">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>q7J/xyj632/HRyBsSYvw82jwCg50+ZlOEHByYgTgq0I=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Flowers_log.ldf" size="8388608" writeableType="applicationData">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>+9gq8qvkUphGy1unteJETlf7++AG+8+3W5zitIEi3O0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="ООО_Flowers.exe.config" size="555">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>wW1j/kyYzrpcOMGbO3KTaKLI4fnlH/BQV+s5weRuCH8=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=SEVA\MSI" issuerKeyHash="34c5872a5cf7e98ec44159937ae2f00dfdd25f2e" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>+fPNImpuLZE4zgH+o8pg7s40BbZFxtAtRDeu0IbSs1w=</DigestValue></Reference></SignedInfo><SignatureValue>rZ7tXLy+r5ZTdn4OuuOfYQ8z7SU2vh1ogdYtV2zVPGuJqdXeIQcjOxEjZ2COkoH00f1UxnrWXF3SD66VfbqxL1+VxZMnxcfHyrre7lscclVLo5EHJU0m2NV4y1UayE+33KPeUwgsDfhcLJ3H4a2VTNieoBi8wgxyIV7SDw7l9KA=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>+7DbusoLLsg03lm5lB7xkBAbTOvYyg1LK9t8tpGCEArXd5BHdb/A78awAvXxgKQpXpoUPrJE/yBum4W4NtGKv81WQcusRLKDvE8DN2km+8eHwLcjpE1UW2OaB0c+dzM96OeISQl+LvQ/9Cg2qs0LWJ6zHrqwMHMsCMyedKSYnwU=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="5cb3d286d0ae37442dd0c645b60534ceee60caa3fe01ce38912d6e6a22cdf3f9" Description="" Url=""><as:assemblyIdentity name="ООО_Flowers.exe" version="1.0.0.2" publicKeyToken="c25eab473056751c" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=SEVA\MSI</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>fwCj+gJL9P/z6OIjrdcb0j4OpZnF1n+Px/IcV2xGws0=</DigestValue></Reference></SignedInfo><SignatureValue>xv5ZbTKNIdM1PkO+jjv+NdWKBPoyMWyIG8NKhikK4C0hcdkydDfO8uFdwJvxocox4ZZY7UUqOIweDM3fHmGiDEfWylaghiua8cPlFOmc/Uec1FuwLPOWYutF0mx5c3YS54bk6WRbSLczXao96IiZHp+veRI1Er1rdbyN8iMqLCE=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>+7DbusoLLsg03lm5lB7xkBAbTOvYyg1LK9t8tpGCEArXd5BHdb/A78awAvXxgKQpXpoUPrJE/yBum4W4NtGKv81WQcusRLKDvE8DN2km+8eHwLcjpE1UW2OaB0c+dzM96OeISQl+LvQ/9Cg2qs0LWJ6zHrqwMHMsCMyedKSYnwU=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIBuTCCASKgAwIBAgIQFfJYdcCR+LVNmq8uTsmQGDANBgkqhkiG9w0BAQsFADAbMRkwFwYDVQQDHhAAUwBFAFYAQQBcAE0AUwBJMB4XDTI0MDIxNDA3MTIxOVoXDTI1MDIxMzEzMTIxOVowGzEZMBcGA1UEAx4QAFMARQBWAEEAXABNAFMASTCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEA+7DbusoLLsg03lm5lB7xkBAbTOvYyg1LK9t8tpGCEArXd5BHdb/A78awAvXxgKQpXpoUPrJE/yBum4W4NtGKv81WQcusRLKDvE8DN2km+8eHwLcjpE1UW2OaB0c+dzM96OeISQl+LvQ/9Cg2qs0LWJ6zHrqwMHMsCMyedKSYnwUCAwEAATANBgkqhkiG9w0BAQsFAAOBgQB8SHL/l/oH201+rcYZvhxw0G7z6kH2dnyg5ZtlWyIA58fA16r68HcwNRg0dtF9jnGQSvfgw3sKuy7QVfycrZhg8U9fQtD8cEF5tAup2ETaqg27K4wAzPjXXsHq+I1N/5buXMLChSsw877ptm6GI8z5qXq6VUHUN0gf//eNwIchOw==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
